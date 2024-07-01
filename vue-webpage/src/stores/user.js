@@ -6,6 +6,7 @@ export const useUserStore = defineStore("user", {
     firstName: "",
     lastName: "",
     birthDate: "",
+    hobbies: "",
   }),
   actions: {
     setUserData(email, firstName, lastName, birthDate) {
@@ -13,6 +14,9 @@ export const useUserStore = defineStore("user", {
       this.firstName = firstName;
       this.lastName = lastName;
       this.birthDate = birthDate;
+    },
+    setHobbies(hobbies) {
+      this.hobbies = hobbies;
     },
   },
 });

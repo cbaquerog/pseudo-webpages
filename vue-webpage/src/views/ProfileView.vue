@@ -1,3 +1,9 @@
+<script setup>
+import NavBar from "../components/NavBar.vue";
+</script>
+
 <template>
-  <h1>Esto es tu perfil</h1>
+  <div>
+    <NavBar />
+  </div>
 </template>

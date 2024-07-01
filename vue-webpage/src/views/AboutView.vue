@@ -1,3 +1,7 @@
+<script setup>
+import NavBar from "../components/NavBar.vue";
+</script>
+
 <template>
-  <h1>Esto es la about View</h1>
+  <NavBar />
 </template>

@@ -11,11 +11,12 @@ const hobbies = computed(() => userStore.hobbies);
 </script>
 
 <template>
-  <div class="m-2 p-2">
-    <p class="mb-3 text-gray-500 dark:text-gray-400">
-      You are called {{ firstName }} {{ lastName }}, you were born the day
-      {{ birthDate }}, your email is {{ email }} and your hobbies are
-      {{ hobbies }}
+  <div class="m-2 p-2 text-center mt-20">
+    <p class="mb-3 text-black dark:text-gray-400">
+      You are called <strong>{{ firstName }} {{ lastName }}</strong
+      >, you were born the day <strong>{{ birthDate }}</strong
+      >, your email is <strong>{{ email }}</strong> and your hobbies are
+      <strong>{{ hobbies }}</strong>
     </p>
   </div>
 </template>

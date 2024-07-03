@@ -14,7 +14,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <div class="mt-20">
+  <div class="mt-20 mx-2">
     <form @submit.prevent="handleSubmit" class="max-w-xl mx-auto">
       <label
         for="hobbies"

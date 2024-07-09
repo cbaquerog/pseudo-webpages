@@ -3,11 +3,16 @@ import { computed } from "vue";
 import { useUserStore } from "../stores/user";
 
 const userStore = useUserStore();
-const email = computed(() => userStore.email);
-const firstName = computed(() => userStore.firstName);
-const lastName = computed(() => userStore.lastName);
-const birthDate = computed(() => userStore.birthDate);
-const hobbies = computed(() => userStore.hobbies);
+
+const displayValue = (value) => {
+  return value || "____";
+};
+
+const email = computed(() => displayValue(userStore.email));
+const firstName = computed(() => displayValue(userStore.firstName));
+const lastName = computed(() => displayValue(userStore.lastName));
+const birthDate = computed(() => displayValue(userStore.birthDate));
+const hobbies = computed(() => displayValue(userStore.hobbies));
 </script>
 
 <template>
